@@ -375,6 +375,7 @@ exec firefox
 # VSCode
 assign [class="Code"] $ws3
 exec --no-startup-id i3-msg 'workspace $ws3; exec code'
+for_window [class="Code"] focus parent; layout tabbed; focus
 
 # Terminal
 # assign [class="Terminator"] $ws1
